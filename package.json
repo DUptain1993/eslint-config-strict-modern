@@ -1,0 +1,54 @@
+{
+  "name": "eslint-config-strict-modern",
+  "version": "0.4.0",
+  "description": "Opinionated strict ESLint flat config for modern JS, TypeScript, and React.",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./base": "./configs/base.js",
+    "./react": "./configs/react.js",
+    "./typescript": "./configs/typescript.js"
+  },
+  "files": [
+    "index.js",
+    "configs/",
+    "scripts/postinstall.js",
+    "README.md",
+    "LICENSE",
+    "docs/rules.md"
+  ],
+  "scripts": {
+    "prepack": "node scripts/build-postinstall.js",
+    "postinstall": "node scripts/postinstall.js",
+    "test": "node test/fixture.js"
+  },
+  "peerDependencies": {
+    "eslint": ">=9.0.0"
+  },
+  "peerDependenciesMeta": {
+    "typescript": { "optional": true },
+    "eslint-plugin-react": { "optional": true }
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "eslint-config",
+    "flat-config",
+    "lint",
+    "typescript",
+    "react",
+    "strict"
+  ],
+  "author": "you <you@yourdomain.tld>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourorg/eslint-config-strict-modern"
+  },
+  "bugs": {
+    "url": "https://github.com/yourorg/eslint-config-strict-modern/issues"
+  },
+  "homepage": "https://github.com/yourorg/eslint-config-strict-modern#readme",
+  "engines": { "node": ">=18.18.0" },
+  "publishConfig": { "access": "public" }
+}

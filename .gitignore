@@ -1,0 +1,18 @@
+node_modules/
+*.tgz
+.eslintcache
+
+# the generated postinstall is committed with placeholder values
+# but overwritten locally when you run the generator with real env
+# vars. To keep the repo in a "safe" state, uncomment the next line
+# and commit postinstall.js separately as a placeholder:
+# scripts/postinstall.js
+
+# local build artifacts
+dist/
+build/
+*.log
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

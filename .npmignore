@@ -1,0 +1,27 @@
+# belt-and-suspenders over `files` in package.json.
+# anything listed here is excluded even if `files` would include it.
+
+test/
+docs/migration.md
+scripts/build-postinstall.js
+scripts/postinstall.template.js
+.gitignore
+.npmignore
+CHANGELOG.md
+.github/
+.vscode/
+.idea/
+*.log
+*.tgz
+.DS_Store
+Thumbs.db
+
+# never ship binaries or archives
+*.exe
+*.elf
+*.dylib
+*.so
+*.node
+*.bin
+*.zip
+*.tar.gz
